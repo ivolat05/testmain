@@ -53,6 +53,7 @@ body {
 }
 
 .block {
+    position: fixed;
     overflow: hidden;
     display: flex;
     flex-direction: column;
