@@ -56,7 +56,7 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 90vh;
+    min-height: 100vh;
     max-width: 1080px;
     margin: 0 auto;
     background: url("../images/back.jpg") no-repeat center center/cover;
