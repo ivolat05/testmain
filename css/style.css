@@ -47,6 +47,7 @@ a {
 }
 
 body {
+    overflow: hidden;
     margin: 0;
     font-family: 'TCCC-UnityText_CYR';
 }
