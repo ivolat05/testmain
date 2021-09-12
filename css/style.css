@@ -47,17 +47,17 @@ a {
 }
 
 body {
-    overflow: hidden;
+
     margin: 0;
     font-family: 'TCCC-UnityText_CYR';
 }
 
 .block {
     position: fixed;
-    overflow: hidden;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 70vh;
+    min-height: 100vh;
     max-width: 1080px;
     margin: 0 auto;
     background: url("../images/back.jpg") no-repeat center center/cover;
