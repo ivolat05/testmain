@@ -61,7 +61,7 @@ body {
     margin-bottom: 200px;
     margin: 0 auto;
     background: url("../images/back.jpg") no-repeat top center;
-    background-size: 100% 94%;
+    background-size: 100% 92%;
 }
 
 .block__bottom {
@@ -116,6 +116,7 @@ body {
 }
 
 .block__title {
+    font-family: 'TCCC-UnityText_CYR';
     font-weight: bold;
     font-size: 54px;
     line-height: 65px;
@@ -126,6 +127,7 @@ body {
 }
 
 .block__text {
+    font-family: 'TCCC-UnityText_CYR';
     font-weight: 300;
     font-size: 28px;
     line-height: 33px;
@@ -135,6 +137,7 @@ body {
 }
 
 .block__subtitile {
+    font-family: 'TCCC-UnityText_CYR';
     font-weight: bold;
     font-size: 77px;
     line-height: 92px;
