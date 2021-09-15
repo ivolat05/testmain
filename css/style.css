@@ -72,41 +72,65 @@ a {
 }
 
 body {
-
-    margin: 0;
     font-family: 'TCCC-UnityText_CYR';
+
 }
 
 .block {
-    position: fixed;
     width: 100%;
+    position: fixed;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin-bottom: 200px;
     margin: 0 auto;
-    background: url("../images/back.jpg") no-repeat top center;
-    background-size: 100% 92%;
+    background: url('../images/walk.png') repeat center center/100% 100%
 }
 
 .block__bottom {
     margin-top: auto;
+    height: 30vh;
+    background: url('../images/floor.png') repeat center center/100% 100%;
 }
 
 
 .block__wrapp {
-    padding: 74px 65px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.block__box {
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
 }
 
 .logo {
-    max-width: 685px;
+    width: 80%;
     margin: 0 auto;
-    padding-bottom: 70px;
 }
 
 .logo__img {
     width: 100%;
 }
+
+.block__img-1 {
+    position: absolute;
+    width: 39%;
+    right: 0;
+    top: -70%;
+
+}
+
+.block__img-2 {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
 
 .btn {
     width: 681px;
@@ -146,7 +170,6 @@ body {
     font-size: 54px;
     line-height: 65px;
     color: #fff;
-    padding: 35px 0;
     margin: 0;
 
 }
@@ -158,7 +181,6 @@ body {
     line-height: 33px;
     color: #fff;
     margin: 0;
-    padding-bottom: 15px;
 }
 
 .block__subtitile {
@@ -170,14 +192,57 @@ body {
     margin: 0;
 }
 
-@media(max-width:980px) {
+
+
+@media screen and (max-width: 1024px),
+screen and (max-height: 1366px) {
+    .block__bottom {
+        height: 32vh;
+    }
+
     .block__wrapp {
-        padding: 74px 65px 0;
+        padding: 50px 30px;
     }
 
     .logo {
-        max-width: 500px;
+        width: 50%;
+        padding-bottom: 40px;
+
     }
+
+    .btn {
+        width: 50%;
+        font-size: 56px;
+        line-height: 39px;
+        margin-bottom: 20px;
+    }
+
+    .block__box {
+        width: 50%;
+        bottom: 8%;
+    }
+
+    .block__text {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    .block__title {
+        padding-bottom: 15px;
+        font-size: 44px;
+        line-height: 47px;
+    }
+
+    .block__subtitile {
+        font-size: 65px;
+        line-height: 89px;
+    }
+}
+
+
+@media(max-width:980px) {
+
+
 
     .btn {
         width: 500px;
@@ -206,14 +271,53 @@ body {
     }
 }
 
-@media(max-width: 700px) {
+@media screen and (max-width: 768px),
+screen and (max-height: 1024px) {
     .block__wrapp {
-        padding: 64px 65px 0;
+        padding: 30px 30px;
     }
 
     .logo {
-        max-width: 500px;
+        width: 50%;
+        padding-bottom: 40px;
+
     }
+
+    .btn {
+        width: 50%;
+        font-size: 56px;
+        line-height: 39px;
+        margin-bottom: 20px;
+    }
+
+    .block__box {
+        width: 50%;
+        bottom: 7%;
+    }
+
+    .block__text {
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    .block__title {
+        padding-bottom: 15px;
+        font-size: 37px;
+        line-height: 41px;
+    }
+
+    .block__subtitile {
+        font-size: 55px;
+        line-height: 85px;
+    }
+
+    .btn-oval {
+        border: 9px solid rgb(182, 164, 139);
+    }
+}
+
+
+@media(max-width: 700px) {
 
     .btn {
         width: 500px;
@@ -246,10 +350,7 @@ body {
 }
 
 @media(max-width: 700px) {
-    .logo {
-        max-width: 312px;
-        padding-bottom: 53px;
-    }
+
 
     .btn {
         width: 320px;
@@ -267,7 +368,6 @@ body {
     .block__title {
         font-size: 25px;
         line-height: 35px;
-        padding: 15px 0;
     }
 
     .block__text {
@@ -283,15 +383,6 @@ body {
 }
 
 @media(max-width: 600px) {
-    .block__wrapp {
-        padding: 40px 15px 0;
-    }
-
-    .logo {
-        width: 200px;
-        padding-bottom: 30px;
-    }
-
     .btn {
         width: 211px;
         font-size: 24px;
@@ -318,5 +409,47 @@ body {
     .block__subtitile {
         font-size: 29px;
         line-height: 23px;
+    }
+}
+
+@media screen and (max-width: 375px),
+screen and (max-height: 812px) {
+    .logo {
+        width: 64%;
+        padding-bottom: 40px;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+
+    .block__box {
+        width: 70%;
+        bottom: 7%;
+    }
+
+    .block__bottom {
+        height: 27vh;
+    }
+}
+
+@media screen and (max-width: 320px),
+screen and (max-height: 568px) {
+    .block__box {
+        width: 54%;
+    }
+
+    .logo {
+        padding-bottom: 17px;
+    }
+
+    .btn {
+        width: 61%;
+        font-size: 21px;
+        line-height: 41px;
+    }
+
+    .block__wrapp {
+        padding: 13px 30px;
     }
 }
