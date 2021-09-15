@@ -248,6 +248,7 @@ screen and (max-height: 1366px) {
         width: 500px;
         font-size: 62px;
         line-height: 79px;
+        margin-bottom: 10px;
     }
 
     .btn-oval {
@@ -257,11 +258,13 @@ screen and (max-height: 1366px) {
     .block__title {
         font-size: 35px;
         line-height: 45px;
+        padding-bottom: 5px;
     }
 
     .block__text {
         font-size: 18px;
         line-height: 24px;
+        padding-bottom: 5px;
     }
 
     .block__subtitile {
@@ -274,7 +277,7 @@ screen and (max-height: 1366px) {
 @media screen and (max-width: 768px),
 screen and (max-height: 1024px) {
     .block__wrapp {
-        padding: 30px 30px;
+        padding: 25px 15px;
     }
 
     .logo {
@@ -450,6 +453,6 @@ screen and (max-height: 568px) {
     }
 
     .block__wrapp {
-        padding: 13px 30px;
+        padding: 13px 15px;
     }
 }
