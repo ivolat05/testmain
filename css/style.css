@@ -282,7 +282,7 @@ screen and (max-height: 1024px) {
 
     .logo {
         width: 50%;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
 
     }
 
@@ -418,17 +418,17 @@ screen and (max-height: 1024px) {
 @media screen and (max-width: 375px),
 screen and (max-height: 812px) {
     .logo {
-        width: 64%;
-        padding-bottom: 40px;
+        width: 50%;
+
     }
 
     .btn {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .block__box {
         width: 70%;
-        bottom: 7%;
+        bottom: 10%;
     }
 
     .block__bottom {
@@ -442,9 +442,6 @@ screen and (max-height: 568px) {
         width: 54%;
     }
 
-    .logo {
-        padding-bottom: 17px;
-    }
 
     .btn {
         width: 61%;
